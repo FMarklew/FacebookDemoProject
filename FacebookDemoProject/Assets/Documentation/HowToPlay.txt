@@ -1,0 +1,15 @@
+How To Play
+- Camera can be rotated using right click and dragging the mouse
+- Throwable can be thrown by using left click, this will aim at the crosshair visible on the screen
+- When all blue cubes are gone, the level will reset after 5 seconds
+- Players can reset the level manually with the "R" key
+
+How To Design Your Own Level
+- Create empty scene
+- Bring in CoreFunctionality Prefab
+- Design a floor and geometry as desired (make sure they are not on the ScoreCube layer)
+	- Movable objects should have rigid bodies and can reflect their mass as required
+- Add in score cube prefabs, each of these will add to the total score required
+- Add in ScoreHitBoxes as required, you will want one around the ground level so cubes that fall to the floor are counted
+	- Can also add some to the extents of the map so any that are launched outside are also counted
+
